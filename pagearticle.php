@@ -54,13 +54,14 @@
                 <div class="collapse navbar-collapse" id="navcol-1" style="margin: 0px;">
                     <ul class="nav navbar-nav text-uppercase ml-auto">
                         <li class="nav-item text-warning" role="presentation"><a class="nav-link text-warning" href="pagearticle.php"><strong>ARTICLES</strong></a></li>
-                        <li class="nav-item text-white" role="presentation"><a class="nav-link text-warning" href="index.php">À PROPOS</a></li>
+                        <li class="nav-item text-white" role="presentation"><a class="nav-link text-warning" href="index.php#Propos">À PROPOS</a></li>
                         <li class="nav-item text-white" role="presentation"><a class="nav-link text-warning" href="contact.html">CONTACT</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </div>
+    
 
 
     <div class="article-list">
@@ -100,21 +101,42 @@
         <img src="https://cdn-images-1.medium.com/max/1200/1*CC0Bibc8GhOv1F5kff-jCw.png" style="width: 400px; height: 200px;">
         <img src="http://ausoniuseditions.u-bordeaux-montaigne.fr/images/Images/Bordeaux-Montaigne-Logo2.png" style="width: 400px; height: 150px;">
         <img src=""></a></div>
-    <div class="bg-light footer-basic">
-        <footer>
-            <div class="social" style="padding: 20px 0;background-color: rgb(52,58,64);"><a class="text-white" href="#" style="background-color: #2980ef;"><i class="icon ion-social-instagram"></i></a><a class="text-white bg-warning" href="#"><i class="icon ion-social-snapchat"></i></a><a class="text-white" href="#" style="background-color: #00a3dd;"><i class="icon ion-social-twitter"></i></a>
-                <a
-                    class="text-white" href="#" style="background-color: #3a75c4;"><i class="icon ion-social-facebook"></i></a>
+
+    <div class="bg-dark footer-basic">
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                    <h3 class="text-warning">Services</h3>
+                    <ul class="text-white">
+                        <li><a download href="Conditions Générales d'Utilisation.pdf">CGU  / Mentions Légales</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                    <h3 class="text-warning">À propos</h3>
+                    <ul class="text-white">
+                        <li><a href="#">Company</a></li>
+                        <li><a href="index.php#Propos">Équipe</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 item text">
+                    <h3 class="text-warning">Urbrain Bordeaux</h3>
+                    <ul class="text-white">
+                        <li><p><strong>Numéro de téléphone </strong> : 06 95 10 31 80 </p></li>
+                        <li><p><strong>Adresse postale</strong> : 1 Rue Jacques Ellul, 33800 Bordeaux</p></li>
+                        <li><p><strong>Adresse mail </strong>: nathan.braud@mmibordeaux.com</p></li>
+                    </ul>
+                </div>
+                <div class="col item social">
+                    <a href="https://www.facebook.com" target="_blank" class="bg-light"><i class="icon ion-social-facebook"></i></a>
+                    <a href="https://twitter.com/" target="_blank" class="bg-light"><i class="icon ion-social-twitter"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="bg-light"><i class="icon ion-social-instagram"></i></a>
+                </div>
             </div>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a class="text-primary" href="#" target="_top">Haut de page</a></li>
-                <li class="list-inline-item"><a href="#">Services</a></li>
-                <li class="list-inline-item"><a href="#">CGU</a></li>
-                <li class="list-inline-item"><a href="#">Politique de confidentialité</a></li>
-            </ul>
-            <p class="copyright" style="font-size: 16px;">UrbrainBordeaux © 2019</p>
-        </footer>
-    </div>
+            <p class="copyright">Copyright © 2019 Urbrain Bordeaux par Nathan Braud. Tous droits réservés</p>
+        </div>
+    </footer>
+</div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>

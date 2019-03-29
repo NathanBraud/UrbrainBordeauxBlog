@@ -69,25 +69,6 @@
             <label for="UrlPhotA"> UrlPhotA </label><br/>
             <input type="url" name="UrlPhotA" value="<?= $article['UrlPhotA'] ?>"/><br/><br/>
 
-
-            <p>Choix de la thématique :</p>
-				<div>
-				  <input type="radio" name="NumThem" value="2ZQ4"
-				         checked>
-				  <label for="NumThem">Événement</label>
-				</div>
-
-				<div>
-				  <input type="radio" name="NumThem" value="F67A">
-				  <label for="NumThem">Insolite</label>
-				</div>
-
-				<div>
-				  <input type="radio" name="NumThem" value="761D">
-				  <label for="NumThem">Acteur Clé</label>
-				</div>
-
-
             <input type="submit" value="Envoyer" name="edit_article_submit">
 
             <br/>
