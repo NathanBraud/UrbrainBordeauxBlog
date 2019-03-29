@@ -79,24 +79,25 @@
 
 	<div class="container">
 		<form name="inscription" method="POST" action="saisie.php">
-			<label for="NumArt" >Numéro de</label> : <input type="text" name="NumArt"/></input> <br/>
+            <div class="form-group">
+            <label for="NumArt" >Numéro de</label> : <input class="form-control" type="text" placeholder="Numéro de votre article" name="NumArt"/></input> <br/>
 			<label for="DtCreA" >Date</label> : <input class="form-control" type="date" name="DtCreA"/></input> <br/>
-	        <label for="LibTitrA" >Titre</label> : <input type="text" name="LibTitrA"/></input> <br/>
-	        <label for="LibChapoA" >Chapo</label> : <input type="text" name="LibChapoA"/></input> <br/>
-	        <label for="Parag1A" >Paragraphe 1</label> : <input type="text" name="Parag1A"/></input> <br/>
-	        <label for="LibSsTitr1" >Sous-titre 1</label> : <input type="text" name="LibSsTitr1"/></input> <br/>
-	        <label for="Parag2A" >Paragraphe 2</label> : <input type="text" name="Parag2A"/></input> <br/>
-	        <label for="LibSsTitr2" >Sous-titre 2</label> : <input type="text" name="LibSsTitr2"/></input> <br/>
-	        <label for="Parag3A" >Paragraphe 3</label> : <input type="text" name="Parag3A"/></input> <br/>
-	        <label for="LibConclA" >Conclusion</label> : <input type="text" name="LibConclA"/></input> <br/>
-	        <label for="UrlPhotA" >Lien de la photo</label> : <input type="text" name="UrlPhotA"/></input> <br/>
+	        <label for="LibTitrA" >Titre</label> : <input class="form-control" type="text" name="LibTitrA"/></input> <br/>
+	        <label for="LibChapoA" >Chapo</label> : <input class="form-control" type="text" name="LibChapoA"/></input> <br/>
+	        <label for="Parag1A" >Paragraphe 1</label> : <input class="form-control" type="text" name="Parag1A"/></input> <br/>
+	        <label for="LibSsTitr1" >Sous-titre 1</label> : <input class="form-control" type="text" name="LibSsTitr1"/></input> <br/>
+	        <label for="Parag2A" >Paragraphe 2</label> : <input class="form-control" type="text" name="Parag2A"/></input> <br/>
+	        <label for="LibSsTitr2" >Sous-titre 2</label> : <input class="form-control" type="text" name="LibSsTitr2"/></input> <br/>
+	        <label for="Parag3A" >Paragraphe 3</label> : <input class="form-control" type="text" name="Parag3A"/></input> <br/>
+	        <label for="LibConclA" >Conclusion</label> : <input class="form-control" type="text" name="LibConclA"/></input> <br/>
+	        <label for="UrlPhotA" >Lien de la photo</label> : <input class="form-control" type="text" name="UrlPhotA"/></input> <br/>
 	        
 	        <label for="NumThem" >Choix de la thématique</label> : 
 	        <?php $reponse = $dbPdo->query('SELECT * FROM thematique');
 				$reponse->execute(); ?>
 				
 
-			<select name="NumThem" id="NumThem">
+			<select name="NumThem" id="NumThem " class="form-control">
      			<?php
                 while($obj = $reponse->fetch()) { ?>
                     <option value="<?php  echo($obj[0]); ?>">
@@ -104,6 +105,7 @@
                     </option>
                 <?php } ?>
 			</select>
+            </div>
 			
 
 			<br>
